@@ -31,7 +31,7 @@ public class FoodEntryTestClass {
     }
 
     @Test
-    public void testGetWeightTrue(){
+    public void testGetWeightTrue() {
         System.out.println("Testing getWeight() for true");
         int result = entry.getWeight();
         assertEquals(100, result);
@@ -43,13 +43,48 @@ public class FoodEntryTestClass {
         int result = entry.getWeight();
         assertNotEquals(10, result);
     }
-    //TODO: Create true and false test cases for the other FoodEntry class variables
-    //      Follow the pattern show for the getWeight() method
-
-    //TODO: Look into other unit test types to get complete testing coverage on your class
 
     @Test
-    public void firstTest() {
-        Assert.assertTrue(true);
+    public void testGetWasteTrue() {
+        System.out.println("Testing getWaste() for true");
+        int result = entry.getWaste();
+        assertEquals(25, result);
     }
-}
+
+    @Test
+    public void testGetWasteFalse() {
+        System.out.println("Testing getWaste() for false");
+        int result = entry.getWaste();
+        assertNotEquals(100, result);
+    }
+
+    @Test
+    public void testGetLocationTrue() {
+        System.out.println("Testing getLocation() for true");
+        String result = entry.getLocation();
+        assertEquals("Fairfax", result);
+    }
+
+    @Test
+    public void testGetLocationFalse() {
+        System.out.println("Testing getLocation() for False");
+        String result = entry.getLocation();
+        assertNotEquals("Clarendon", result);
+    }
+    }
+
+        //TODO: Create true and false test cases for the other FoodEntry class variables
+//      Follow the pattern show for the getWeight() method
+         //TODO: Look into other unit test types to get complete testing coverage on your class
+
+
+
+        /** boolean @Test
+    public void firstTest() {
+                Assert.assertTrue(true);
+            }
+
+
+        **/
+
+
